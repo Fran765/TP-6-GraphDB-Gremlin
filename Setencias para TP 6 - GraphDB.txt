@@ -1,0 +1,6 @@
+1. g.V().hasLabel('persona').values()
+2. g.V(quilmes).in("sirve").values()
+3. g.V(jose).out("legusta").values()
+4. g.V(jorge).out("legusta").in("sirve").values()
+5. g.V().hasLabel('persona').out('frecuenta').out('sirve').in('legusta').cyclicPath().values()
+6. g.V(javier).out("legusta").in("sirve").in("frecuenta").not(cyclicPath()).values()
